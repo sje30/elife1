@@ -5,6 +5,12 @@ example one:  <https://elifesciences.org/articles/45952/figures>
 Steps:
 
 
+# Summary
+
+not good.  No licence.  No list of dependencies.  No way to run!
+objects missing.  Would need to guess lots of things to reproduce (or
+have a conversation)
+
 # Figure 1
 
 data:
@@ -19,6 +25,8 @@ Did not run:
 source('elife-45952-fig1-code1-v2.r')
 Error in eval(ei, envir) (from elife-45952-fig1-code1-v2.r#4) : object 'gtsB' not found
 ```
+
+First line assumes we have an object called `gtsB` already.
 
 
 ## Figure 2

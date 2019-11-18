@@ -46,3 +46,32 @@ fig2c = read_excel("Fig 2C - YFP-fitness data.xlsx",
 
 
 ## Figure 3
+
+More woes.
+```
+source('elife-45952-fig3-code1-v2.r')
+Error in read_excel("promoter-yfp data.xlsx", col_types = c("text", "numeric",  (from elife-45952-fig3-code1-v2.r#3) : 
+  could not find function "read_excel"
+```
+
+Again, same problem, no .xlsx file provided and no readxl package
+provided.
+
+## Figure 4
+
+Data files missing.  At least this one had some clear description of
+packages that are required:
+
+```
+library(seqinr)
+library(phangorn)
+library(phytools)
+```
+
+But can see errors awaiting us... as none of the data flies were provided.
+
+
+```
+ 9: my.tree = read.tree(file = "pruned tree")
+12:my.alignment = read.alignment(file="gtsB alignment.fasta", format = "fasta")
+77:mut.data = read.csv(file = "mutant fitness for comparison.csv")
